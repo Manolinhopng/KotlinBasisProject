@@ -41,11 +41,35 @@ fun conditionalsAsExpressions(n: Int){
 fun loopsDemo(){
     section("3) loops for while do while")
 
-    for (i in 1..5) print("")
+    for (i in 1..5) print("$i")
+    println()
+
+    val list = listOf("a","b","c")
+    print("for over list")
+    for (x in list) print("$x")
+    println()
+    var x = 3
+    print(" while x>0")
+    while (x>0){
+        print("$x")
+        x--
+    }
+    println()
+
+    var y = 0
+
+    print("do-while y<1:")
+    do{
+        print("$y")
+        y++
+    }while(y<1)
+     println()
+
 }
 
 fun main() {
     println("sesion3")
     variablesAndTypes()
     conditionalsAsExpressions(3)
+    loopsDemo()
 }
